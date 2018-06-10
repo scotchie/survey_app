@@ -45,3 +45,25 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'bootstrap', '~> 4.0.0'
+gem 'devise'
+gem 'pg', '~> 0.18'
+gem 'therubyracer', :platform=>:ruby
+
+group :development do
+  gem 'better_errors'
+  gem 'hub', :require=>nil
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-rescue'
+end
+
+group :production do
+  gem 'unicorn'
+end
+
